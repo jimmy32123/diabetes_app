@@ -11,7 +11,7 @@ import os
 def load_ml_objects():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     scaler_path = os.path.join(current_dir, 'scaler.pkl')
-    model_path = os.path.join(current_dir, 'diabetes_pred_model(1).pkl')
+    model_path = os.path.join(current_dir, 'diabetes_pred_model.pkl')
     
     if os.path.exists(scaler_path) and os.path.exists(model_path):
         try:
